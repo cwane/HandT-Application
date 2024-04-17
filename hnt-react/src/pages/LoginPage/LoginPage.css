@@ -1,0 +1,205 @@
+/*login page starts*/
+.login-content-wrap {
+    width: 35%;
+    margin-left: auto;
+  }
+  .login-page-wrap {
+    position: relative;
+    padding: 100px 0 80px !important;
+  }
+  .login-image-wrap {
+    width: 55%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+  .login-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .login-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .login-logo {
+    margin-bottom: 15px;
+  }
+  .login-header .entry-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  .login-header span {
+    font-size: 18px;
+    color: var(--black-color);
+  }
+  .login-link-wrap ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+  }
+  .login-link-wrap ul li {
+    margin: 0;
+  }
+  .login-link-wrap ul li a {
+    border: 1px solid #DEDEDE;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: var(--black-color);
+    text-transform: capitalize;
+  }
+  .login-link-wrap ul li a:hover {
+    border-color: var(--primary);
+    box-shadow: 2px 4px 4px 1px rgba(0,0,0,0.1);
+  }
+  .login-link-wrap ul li a img {
+    max-width: 23px;
+  }
+  .login-link-wrap {
+    margin-bottom: 20px;
+  }
+  .login-devider {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .login-devider span {
+    color: var(--black-color);
+    font-size: 13px;
+    background: var(--white);
+    z-index: 2;
+    position: relative;
+    padding: 0 10px;
+  }
+  .login-devider::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #DBDBDB;
+    top: 10px;
+    left: 0;
+  }
+.login-form-wrap p,
+form p{
+    position: relative;
+}
+.login-form-wrap input{
+  background: none;
+}
+.login-form-wrap input,
+.profile-setup-page-wrap input,
+.profile-setup-page-wrap form select,
+textarea,
+input {
+    border: 1px solid #6B737A;
+    border-radius: 8px;
+    margin-bottom: 0;
+    padding-top: 14px;
+    padding-left: 13px;
+  }
+  .login-form-wrap p input ~ label,
+ form p .form-select ~ label,
+ form p input ~ label {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    padding: 1px 8px;
+    pointer-events: none;
+    transition: .5s;
+    background: var(--white);
+    text-transform: capitalize;
+  }
+  .login-form-wrap p input:focus ~ label, 
+  .login-form-wrap p input:valid ~ label,
+  form p .form-select:focus ~ label, 
+  form p .form-select:valid ~ label ,
+  form p input:focus ~ label, 
+  form p input:valid ~ label {
+    top: -9px;
+    color: var(--primary);
+    font-size: 12px;
+  }
+  .login-form-wrap p input:focus,
+  form p input:focus{
+    border-color: #343A40;
+  }
+  .align-center {
+    text-align: center;
+  }
+.d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+.justify-between {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+ .justify-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .login-form-wrap a {
+    color: var(--primary);
+    margin-left: 4px;
+  }
+  .login-form-wrap a:hover {
+    color: var(--black-color) !important;
+  }
+  .login-form-wrap input[type="submit"] {
+    background: var(--primary);
+    border-color: var(--primary);
+    width: 100%;
+    padding: 21px 13px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .login-form-wrap input[type="submit"]:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+  }
+  .login-form-wrap p label,
+  .login-form-wrap p{
+    color: var(--black-color);
+  }
+  .show-password-input {
+    position: absolute;
+    height: 15px;
+    width: 20px;
+    top: 18px;
+    right: 7px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .show-password-input::before {
+    content: "\f06e";
+    font-family: "FontAwesome";
+    top: -2px;
+    position: relative;
+  }
+  .login-form-wrap input[type="password"] {
+    padding-right: 27px;
+  }

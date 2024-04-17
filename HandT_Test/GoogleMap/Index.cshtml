@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Map</title>
+</head>
+<body>
+   
+
+    <!-- Include Google Maps JavaScript API script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBECmwecPVRbwIsZ2LWt1H-3O-eANp9Ib4&callback=initMap" async defer></script>
+
+<!-- Create a container for the map -->
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+<script>
+    function initMap() {
+        // Fetch map data from your API
+        fetch('https://yourapi.com/api/mapdata')
+            .then(response => response.json())
+            .then(data => {
+                // Create a map centered on the provided coordinates
+                const map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: data.Center.Lat, lng: data.Center.Lng },
+                    zoom: 10
+                });
+
+                // Add markers to the map based on the data
+                data.Markers.forEach(markerData => {
+                    new google.maps.Marker({
+                        position: { lat: markerData.Lat, lng: markerData.Lng },
+                        map: map,
+                        title: markerData.Title
+                    });
+                });
+            })
+            .catch(error => console.error(error));
+    }
+</script>
+
+</body>
+</html>

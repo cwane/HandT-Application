@@ -1,0 +1,119 @@
+/*footer-section starts*/
+
+.site-footer {
+    background: #2D2D2D;
+}
+.site-footer a:hover{
+    color: var(--secondary);
+}
+.site-footer .widget-area {
+    padding: 80px 0 10px;
+    position: relative;
+    background-attachment: fixed !important;
+  background-position: 50% 0 !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.site-footer .widget-area::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background: rgba(0, 74, 135, 0.67);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+.site-footer .widget-area .row div[class*="col-"] {
+    width: 20%;
+  }
+  .site-footer .widget-area .row div[class*="col-"]:last-child {
+    width: 40%;
+  }
+  .site-footer .widget {
+    margin: 0 0 20px;
+  }
+.site-footer .widget-title {
+    font-size: 18px;
+  }
+  .widget ul li {
+    margin-bottom: 12px;
+  }
+  .site-footer *{
+    color: var(--white);
+  }
+  .mc4wp-form .mc4wp-form-fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 2px;
+  }
+  .mc4wp-form input{
+    margin-bottom: 0;
+  }
+  .mc4wp-form-fields p {
+    width: 75%;
+    width: calc(100% - 107px);
+    width: -webkit-calc(100% - 107px);
+  }
+  .mc4wp-form-fields p.mc4wp-submit-btn {
+    width: 105px;
+  }
+  .widget .inline-social-icon {
+  padding: 0;
+  text-align: left;
+}
+  .mc4wp-form input[type="submit"] {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+  }
+  .mc4wp-form input[type="email"] {
+    background: rgba(255,255,255,0.3);
+  }
+  .widget .inline-social-icon ul li {
+    margin-bottom: 0;
+  }
+  .site-generator {
+    background: var(--bg-color);
+    padding: 19px 0;
+  } 
+  .footer-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+  }
+  .site-generator .row > div:nth-child(2n) .footer-menu ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-menu ul li {
+    margin: 5px 0;
+  }
+  .site-generator .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .site-generator .row > div:last-child {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+/*footer-section ends*/

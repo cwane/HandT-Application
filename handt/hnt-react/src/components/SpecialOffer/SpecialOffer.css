@@ -1,0 +1,92 @@
+/* special-offer-section starts*/
+section.special-offer-section {
+    padding-top: 150px;
+}
+
+.special-offer-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: #EEF4FC;
+    align-items: center;
+    position: relative;
+  z-index: 9;
+  }
+  
+  .special-offer-image-wrap {
+    width: 540px;
+  }
+  .special-form-wrap {
+    width: 44%;
+    width: calc(100% - 540px);
+    width: -webkit-calc(100% - 540px);
+    padding: 20px;
+  }
+  .special-form-wrap .entry-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #5890E5;
+    margin-bottom: 10px;
+  }
+  .special-form-wrap .entry-header.heading .entry-title {
+    color: #1D293F;
+  }
+  .special-form-wrap .mc4wp-form .mc4wp-form-fields {
+      display: flex;
+        flex-wrap: wrap;
+      gap: 0;
+    }
+    .special-form-wrap .mc4wp-form .mc4wp-form-fields p:first-child {
+        flex: 2;
+    }
+    .special-form-wrap .mc4wp-form input[type="email"] {
+      background: var(--white);
+      border: 1px solid #9E9E9E50;
+      border-radius: 0;
+    }
+  .special-form-wrap .mc4wp-submit-btn {
+    position: relative;
+  }
+  .special-form-wrap .mc4wp-submit-btn::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: var(--primary);
+    bottom: -3px;
+    left: 0;
+  }
+  .special-form-wrap .mc4wp-submit-btn::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 5px;
+    background: var(--primary);;
+    bottom: -3px;
+    left: -5px;
+    border-radius: 0 0 0 15px;
+  }
+  .special-form-wrap .mc4wp-submit-btn:hover:before,
+  .special-form-wrap .mc4wp-submit-btn:hover:after {
+    background: var(--secondary);
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+}
+.special-offer-section .dot-bg-image {
+    position: absolute;
+    top: -77px;
+    left: -13px;
+  }
+  .special-offer-section .container {
+    position: relative;
+  }
+  .site-footer .mc4wp-form input {
+    border-radius: 0;
+  }

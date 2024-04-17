@@ -1,0 +1,190 @@
+  form span.required {
+    color: red;
+  }
+  .fome-tags-wrap {
+    padding: 20px 15px 20px;
+    border: 1px solid #6B737A;
+    display: block;
+    border-radius: 8px;
+  }
+  .form-title-label {
+    position: absolute;
+    top: -9px;
+    left: 10px;
+    padding: 1px 8px;
+    pointer-events: none;
+    transition: .5s;
+    background: var(--white);
+    text-transform: capitalize;
+    font-size: 12px;
+    color: var(--primary);
+  }
+  .fome-tags-wrap .form-tags {
+    background: var(--primary);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px 35px 8px 15px;
+    display: inline-block;
+    color: var(--white);
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    margin-right: 3px;
+    margin-bottom: 7px;
+    position: relative;
+  }
+  .fome-tags-wrap .form-tags:hover {
+    background: var(--secondary);
+  }
+  .fome-tags-wrap .tags-close-icon {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: var(--white);
+    border-radius: 50px;
+    right: 12px;
+    top: 12px;
+  }
+  .fome-tags-wrap .tags-close-icon:hover {
+    background: var(--black-color);
+  }
+  .fome-tags-wrap .tags-close-icon:hover:before,
+  .fome-tags-wrap .tags-close-icon:hover:after {
+    background: var(--white);
+  }
+  .fome-tags-wrap .tags-close-icon::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 8px;
+    width: 1px;
+    background: var(--primary);
+    left: 7px;
+    top: 4px;
+    -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  }
+  .fome-tags-wrap .tags-close-icon::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 8px;
+    width: 1px;
+    background: var(--primary);
+    left: 7px;
+    top: 4px;
+    -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  }
+  form p img {
+    margin-bottom: 15px;
+  }
+  select {
+    text-transform: capitalize;
+  }
+  .profile-setup-page-wrap .entry-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  .submit-btn-wrap {
+    padding-top: 28px;
+  }
+  .header-search .search-form input[type="search"],
+  .site-footer .mc4wp-form input[type="email"]{
+    color: var(--white);
+  }
+  .profile-setup-page-wrap .nav-tabs button {
+    border: none;
+    padding: 0 0 0 30px;
+    background: none;
+    color: var(--text-color);
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-right: 5px;
+    position: relative;
+  }
+  .profile-setup-page-wrap .nav-tabs button:hover,
+  .profile-setup-page-wrap .nav-tabs button.active {
+    color: var(--primary);
+  }
+   .profile-setup-page-wrap .nav-tabs button::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 24px;
+    width: 24px;
+    border: 2px solid #666;
+    border-radius: 50px;
+    left: 0;
+    top: 0;
+  }
+  .profile-setup-page-wrap .nav-tabs button.active:before{
+    border-color: var(--primary);
+  }
+  .profile-setup-page-wrap .nav-tabs button::after {
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    display: block;
+    content: "";
+    background: var(--primary);
+    border-radius: 50px;
+    left: 6px;
+    top: 6px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .profile-setup-page-wrap .nav-tabs button.active::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  #image-file-input {
+    display: none;
+  }
+  #image-file-input-label {
+    display: inline-block;
+    background: var(--primary);
+    padding: 8px 18px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  }
+  #image-file-input-label::before {
+    content: "\f040";
+    font-family: "FontAwesome";
+    position: absolute;
+    display: block;
+    left: 15px;
+    font-weight: 400;
+    top: 7px;
+  }
+  #image-file-input-label:hover {
+    background: var(--secondary);
+    -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  }
+  .image-file-input-wrap {
+    display: block;
+  }
+  .site-content section:first-child {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+ 

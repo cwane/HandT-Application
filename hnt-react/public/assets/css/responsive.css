@@ -1,0 +1,515 @@
+/*  12.0 ===== Medias/Responsive =====   */
+
+/*
+ * Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+@media only screen and (max-width: 1599px) {
+.login-image-wrap {
+  width: 59%;
+}
+
+}
+
+/* All Tablet Portrait size smaller than standard 1399 (devices and browsers) */
+
+@media only screen and (max-width: 1399px) {
+    .header-search {
+        width: 580px;
+      }
+      .hgroup-right .navbar {
+        width: 69%;
+        width: calc(100% - 695px);
+        width: -webkit-calc(100% - 695px);
+      }
+}
+
+@media only screen and (max-width: 1309px) {
+  .header-search {
+    width: 410px;
+  }
+  .hgroup-right .navbar {
+    width: 50%;
+    width: calc(100% - 525px);
+    width: -webkit-calc(100% - 525px);
+  }
+  h3 {
+    font-size: 22px;
+  }
+
+}
+
+/* All Tablet Portrait size smaller than standard 1199 (devices and browsers) */
+
+@media only screen and (max-width: 1199px) {
+
+  .banner-text .entry-title {
+    font-size: 44px;
+  }
+  .entry-header.heading .entry-title {
+    font-size: 26px;
+  }
+  .entry-header.heading {
+  margin: 0 auto 15px;
+}
+.package-price-rate {
+  font-size: 20px;
+}
+.nav-tabs button {
+  padding: 9px 17px 10px;
+}
+.nav-tabs {
+  gap: 8px;
+  margin: 0 -8px 20px;
+}
+.site-content section.special-offer-section {
+  padding-top: 30px;
+}
+.special-offer-section .dot-bg-image {
+  top: -52px;
+}
+.hgroup-right .navbar {
+  width: 49%;
+  width: calc(100% - 415px);
+  width: -webkit-calc(100% - 415px);
+}
+.main-navigation ul > li > a {
+  font-size: 14px;
+}
+.header-search {
+  width: 300px;
+}
+.menu-top-menu-container > ul > li {
+  margin: 0 10px;
+}
+
+
+
+}
+
+/* All Tablet Portrait size smaller than standard 1023 (devices and browsers) */
+
+@media only screen and (max-width: 1023px) {
+  .header-signin a {
+    font-size: 14px;
+  }
+  .header-signin {
+    width: 100px;
+  } 
+  .hgroup-right .navbar {
+    width: 49%;
+    width: calc(100% - 400px);
+    width: -webkit-calc(100% - 400px);
+  }  
+  .site-content section {
+    padding: 0 0 60px;
+  }
+  .special-offer-section .dot-bg-image {
+    max-width: 40px;
+    left: 0;
+  }
+  
+
+
+}
+
+@media only screen and (max-width: 991px) {
+
+.banner-content {
+  max-width: 480px;
+}
+.hgroup-right .navbar {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 99;
+}
+.mean-container .mean-bar {
+  padding: 0;
+}
+.mean-container .mean-nav > ul {
+  left: 0;
+  top: 35px;
+}
+.hgroup-right {
+  padding-right: 45px;
+}
+.header-search {
+  padding-right: 15px;
+  width: 80%;
+  width: calc(100% - 100px);
+  width: -webkit-calc(100% - 100px);
+}
+.mean-container .mean-nav ul li a:hover {
+  background: var(--primary);
+}
+.featured-event-section .slick-track .slick-slide {
+  margin: 0 10px;
+}
+.featured-event-slider {
+  padding: 0 10px;
+}
+.featured-event-section .entry-header.heading .entry-title {
+  margin-left: 20px;
+}
+.slick-prev {
+  left: -18px;
+}
+.slick-next {
+  right: -18px;
+}
+.event-wrapper{
+  gap: 20px;
+}
+.event-wrapper .package-event-item {
+  width: 48.5%;
+  width: calc(50% - 20px);
+  width: calc(50% - 10px);
+}
+.special-form-wrap {
+  width: 44%;
+  width: calc(100% - 350px);
+  width: -webkit-calc(100% - 350px);
+  padding: 15px;
+}
+.special-offer-image-wrap {
+  width: 350px;
+}
+.entry-header.heading p {
+  font-size: 16px;
+}
+.special-form-wrap .entry-header.heading .entry-title {
+  font-size: 24px;
+}
+.special-offer-image-wrap .featured-image, .special-offer-image-wrap .featured-image img {
+  height: 100%;
+}
+.special-offer-content-wrapper {
+  align-items: inherit;
+}
+.footer-menu ul {
+  gap: 10px;
+}
+.footer-menu ul li {
+  margin: 0;
+}
+
+
+}
+
+/* All Mobile Portrait size smaller than 768 (devices and browsers) */
+
+@media only screen and (max-width: 767px) {
+  
+  .banner-text .entry-title {
+    font-size: 36px;
+  }
+  .site-content section.banner-section {
+    padding: 150px 0 300px;
+  }
+  .banner-text p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+.slick-prev {
+  left: -12px;
+}
+.slick-prev, .slick-next {
+  height: 30px;
+  width: 30px;
+}
+.slick-next {
+  right: -12px;
+}
+.nav-tabs button {
+  padding: 7px 14px 8px;
+}
+.special-offer-image-wrap {
+  width: 100%;
+}
+.special-form-wrap {
+  padding: 20px;
+  width: 100%;
+}
+.site-content section.special-offer-section {
+  padding-top: 15px;
+}
+.site-generator .row {
+  display: block;
+  text-align: center;
+}
+.footer-menu ul,
+.site-generator .row > div:last-child {
+  justify-content: center;
+}
+.site-generator .row > div:not(:last-child) {
+  margin-bottom: 13px;
+}
+.site-footer .widget-area .row div[class*="col-"],
+.site-footer .widget-area .row div[class*="col-"]:last-child {
+  width: 100%;
+}
+.site-footer .widget-area {
+  padding: 35px 0 5px;
+}
+.site-footer .widget-title {
+  margin-bottom: 10px;
+}
+.special-offer-section .dot-bg-image {
+  max-width: 30px;
+  left: 5px;
+}
+
+
+
+}
+
+@media only screen and (max-width: 576px) {
+
+  .header-signin a {
+    font-size: 0;
+    height: 40px;
+    padding: 0;
+    background-position: center;
+  }
+  .header-signin {
+    width: 40px;
+  }
+  .site-branding {
+    width: 120px;
+  }
+  .hgroup-right {
+    width: 73%;
+    width: calc(100% - 120px);
+    width: -webkit-calc(100% - 120px);
+  }
+  .header-search {
+    width: 85%;
+    width: calc(100% - 40px);
+    width: -webkit-calc(100% - 40px);
+  }
+  .banner-text .entry-title {
+    font-size: 32px;
+  }
+  .banner-content {
+    max-width: 420px;
+  }
+  .site-content section.banner-section {
+    padding: 150px 0 270px;
+  }
+  .featured-event-slider {
+    padding: 0 15px;
+  }
+  .slick-prev {
+    left: -9px;
+  }
+  .slick-next {
+    right: -9px;
+  }
+  .featured-event-section .entry-header.heading .entry-title {
+    margin-left: 25px;
+  }
+  .slick-dots li {
+    margin: 0 3px;
+  }
+  .entry-header.heading .entry-title {
+    font-size: 24px;
+  }
+  .entry-header.heading {
+    margin-bottom: 20px;
+  }
+  .package-item-info-detail ul {
+    gap: 8px;
+  }
+  .package-item-info-detail ul li {
+    width: 100%;
+  }
+  
+
+
+}
+
+/* All Mobile size smaller than standard 479 (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+  .banner-text .entry-title {
+    font-size: 24px;
+  }
+  .site-content section.banner-section {
+    padding: 120px 0 270px;
+  }
+  .featured-event-section .entry-header.heading .entry-title {
+    margin-left: 0;
+  }
+  .entry-header.heading .entry-title {
+    font-size: 20px;
+  }
+  .box-button, input[type="submit"], .wpcf7 input[type="submit"] {
+    padding: 10px 17px;
+    letter-spacing: 0.3px;
+}
+.nav-tabs {
+  gap: 0;
+  margin: 0 0px 15px;
+}
+.event-wrapper .package-event-item {
+  width: 100%;
+}
+.nav-tabs button {
+  margin: 0 5px 5px 0;
+}
+.site-content section {
+  padding: 0 0 40px;
+}
+.special-form-wrap {
+  padding: 15px;
+}
+.mc4wp-form input[type="submit"] {
+  font-size: 12px;
+}
+.mc4wp-form-fields p.mc4wp-submit-btn {
+  width: 90px;
+}
+.mc4wp-form-fields p {
+  width: 65%;
+  width: calc(100% - 92px);
+  width: -webkit-calc(100% - 92px);
+}
+.search-toggle {
+  display: block;
+}
+.header-search .search-form {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  position: absolute;
+  right: 15px;
+  top: 54px;
+  visibility: hidden;
+  z-index: 9;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  width: 300px;
+}
+.search-toggle.search-active ~ .search-form {
+  display: block;
+  visibility: visible;
+}
+.header-search .search-form input[type="search"] {
+  border: 1px solid rgba(0,0,0,0.5);
+}
+.header-search {
+  text-align: right;
+}
+.header-signin a {
+  height: 30px;
+  background-position: center !important;
+  background-size: 10px;
+}
+.header-signin {
+  width: 30px;
+}
+.search-toggle {
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--white);
+  display: inline-block;
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.search-toggle:hover,
+.search-active {
+  background: var(--primary);
+}
+.search-toggle img {
+  max-width: 14px;
+}
+.header-search .search-form input{
+  height: 41px;
+}
+.header-search .search-form input[type="submit"] {
+  background-color: rgba(0,0,0,0.8);
+  height: 41px;
+  width: 41px;
+  right: 8px;
+  transition: all 0s ease 0s;
+  -webkit-transition: all 0s ease 0s;
+  -moz-transition: all 0s ease 0s;
+  -ms-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+}
+.header-search .search-form input[type="submit"]:hover {
+  background-color: var(--primary);
+}
+.header-search ::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.8);
+}
+.header-search :-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(0,0,0,0.8);
+}
+
+.header-search ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(0,0,0,0.8);
+}
+
+.header-search :-ms-input-placeholder {
+  color: rgba(0,0,0,0.8);
+}
+.site-header {
+  top: 10px;
+}
+.header-search .search-form::before {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background: var(--white);
+  top: -6px;
+  right: 97px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.header-search .search-form input[type="search"] {
+  padding-right: 47px;
+}
+
+
+}

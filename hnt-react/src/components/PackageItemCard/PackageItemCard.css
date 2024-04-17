@@ -1,0 +1,96 @@
+.package-event-item{
+    height: 100%;
+  }
+
+.package-event-item {
+    background: var(--white);
+    padding: 15px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px 3px rgba(0,0,0,0.1);
+  }
+  .package-image-wrap {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+  }
+  .package-image-wrap .event-tag {
+    background: var(--primary);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 11px;
+    display: inline-block;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+  }
+  .package-item-detail {
+    padding-top: 15px;
+    position: relative;
+  }
+  .package-item-detail .entry-title {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .package-item-detail .entry-title a{
+    color: var(--black-color);
+  }
+  .package-item-detail .entry-title a:hover{
+    color: var(--primary)
+  }
+  .package-item-detail .entry-content {
+    margin-bottom: 0;
+  }
+  .package-item-info-detail ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .package-item-info-detail ul li {
+    width: 48%;
+    width: calc(50% - 8px);
+    width: -webkit-calc(50% - 8px);
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+  .package-item-info-detail {
+    margin-bottom: 15px;
+  }
+  .package-info-detail-icon {
+    color: var(--primary);
+    margin-right: 2px;
+    width: 13px;
+    display: inline-block;
+    font-size: 14px;
+  }
+  .package-price-rate {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+  }
+  .package-price-person {
+    font-size: 14px;
+    position: relative;
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 5px;
+  }
+  .package-price-person::before {
+    position: absolute;
+    display: block;
+    content: "/";
+    left: -6px;
+    bottom: 0;
+  }
+  .package-report-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+  }
+  .package-image-wrap .featured-image img {
+    width: 100%;
+  }

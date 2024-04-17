@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+
+}
+<div class="row w-100 mx-0 auth-page">
+    <div class="col-md-8 col-xl-6 mx-auto">
+        <div class="card">
+            <div class="row">
+                <div class="col-md-4 pr-md-0">
+                    <div class="auth-left-wrapper">
+                    </div>
+                </div>
+                <div class="col-md-8 pl-md-0">
+                    <div class="auth-form-wrapper px-4 py-5">
+                        <a href="#" class="noble-ui-logo d-block mb-2">H and <span>T</span></a>
+                        <h5 class="text-muted font-weight-normal mb-4">Admin Login</h5>
+                        <form class="forms-sample" method="post">
+                            @Html.AntiForgeryToken()
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Username</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" autocomplete="current-password" placeholder="Password">
+                            </div>
+                            @*<div class="form-check form-check-flat form-check-primary">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    Remember me
+                                </label>
+                            </div>*@
+                            <div class="mt-3">
+                                <button type="submit" class="btn btn-primary mr-2 mb-2 mb-md-0">Login</button>
+                                @*<button type="button" class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
+                                    <i class="btn-icon-prepend" data-feather="twitter"></i>
+                                    Login with twitter
+                                </button>*@
+                            </div>
+                           @* <a href="register.html" class="d-block mt-3 text-muted">Not a user? Sign up</a>*@
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

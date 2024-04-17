@@ -1,0 +1,23 @@
+.page-title-wrap {
+  padding-top: 140px 0 120px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  position: relative;
+  text-align: center;
+  }
+  .page-title-wrap::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: #0071C230;
+  }
+  .page-title-wrap .container {
+    position: relative;
+    z-index: 9;
+  }
+
+  

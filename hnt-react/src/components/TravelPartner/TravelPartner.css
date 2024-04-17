@@ -1,0 +1,38 @@
+/* partner-slider-section starts*/
+
+section.travel-partner-section {
+    padding-top: 70px;
+    margin-bottom: 77px;
+}
+
+.travel-partner-slider .slick-dots {
+    bottom: -50px;
+  }
+  .travel-partner-item img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+  .travel-partner-item a:hover img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+.travel-partner-item {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
